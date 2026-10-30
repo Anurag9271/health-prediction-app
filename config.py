@@ -13,7 +13,7 @@ DB_PATH = os.getenv("DB_PATH", str(BASE_DIR / "patients.db"))
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-AI_TIMEOUT_SECONDS = 30
+AI_TIMEOUT_SECONDS = 60
 
 # Accepted ranges for blood-test values (sanity limits, not diagnostic limits)
 RANGES = {
